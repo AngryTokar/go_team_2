@@ -1,14 +1,85 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-  </body>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>IceCream</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+		integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./sass/index.css" />
+	<script type="module" src="./index.js"></script>
+</head>
+
+<body>
+	<!-- ❗️❗️❗️ Add partials like so for every page -->
+	<include src="./partials/header.html"></include>
+	<include src="./partials/hero.html"></include>
+	<include src="./partials/products.html"></include>
+	<include src="./partials/about.html"></include>
+	<include src="./partials/gallery.html"></include>
+	<include src="./partials/customer.html"></include>
+	<include src="./partials/contacts.html"></include>
+	<include src="./partials/footer.html"></include>
+
+	<header>
+		<!-- <div class="container header__container">
+			<ul class="list header__menu-list">
+				<li class="header-menu__item">
+					<a href="./index.html" class="link current-link header-menu__link">Home</a>
+				</li>
+				<li class="header-menu__item">
+					<a href="./index.html" class="link header-menu__link">About us</a>
+				</li>
+				<li class="header-menu__item">
+					<a href="./index.html" class="link header-menu__link">How it’s made?</a>
+				</li>
+				<li class="header-menu__item">
+					<a href="./index.html" class="link header-menu__link">Our products</a>
+				</li>
+				<li class="header-menu__item">
+					<a href="./index.html" class="link header-menu__link">Contact</a>
+				</li>
+
+			</ul> -->
+		</div>
+		<!-- Mobile-menu -->
+		<div class="container mobile-menu__container">
+			<div class="mobile-menu" data-menu>
+				<div class="mobile-menu__top">
+					<button class="mobile-menu__close-button button" type="button" data-menu-close>
+						<svg class="mobile-menu__icon" Width="40" Height="40">
+							<use href=""></use>
+						</svg>
+					</button>
+					<button class="mobile-menu__buy-button button--white" type="button">Buy now</button>
+					<ul class="list mobile-menu__list">
+						<li class="mobile-menu__item">
+							<a href="./index.html" class="link current-link mobile-menu__link">Home</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="./index.html" class="link mobile-menu__link">About us</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="./index.html" class="link mobile-menu__link">How it’s made?</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="./index.html" class="link mobile-menu__link">Our products</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="./index.html" class="link mobile-menu__link">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+</body>
+
 </html>
